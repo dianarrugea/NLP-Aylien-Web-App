@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Aylien NLP</title>
+        <link rel="stylesheet" href="/styles/resets.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+    </head>
+
+    <body>
+
+        <!-- Header -->
+
+        <header>
+            <div class="header-design">
+              <h1 class="title-design">Aylien ~ Natural Language Processing</h1>
+            </div>
+        </header>
+
+        <!-- Form -->
+
+        <main>
+            <section>
+                <form class="form-design" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Input website here">
+                    <input class = "button-style" type="submit" name="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            <section>
+            <section>
+                
+                <div class = "results-design" id="results">
+                    <h2 class = "results-title"> Form Results</h2>
+                    <p id="polarity"></p>
+                    <p id="subjectivity"></p>
+                    <p id="polarity-conf"></p>
+                    <p id="subjectivity-conf"></p>
+                    <p id="website-name"></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+
+        <div class="footer">
+        <div class="copyright">
+                Copyright &copy; Diana Rugea
+        </div>
+
+        <!-- Service Workers -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
