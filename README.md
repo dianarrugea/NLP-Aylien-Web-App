@@ -119,5 +119,5 @@ The API has a lot of different endpoints you can take a look at [here](https://d
 
 ## Author
 ### Diana Rugea
-### Front End Development Nanodegree Program
+
 
