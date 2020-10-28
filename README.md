@@ -119,7 +119,15 @@ The API has a lot of different endpoints you can take a look at [here](https://d
 
 * npm run test
 
+## Preview of the web app
+
+* Home Page
+
+![aylien1](https://user-images.githubusercontent.com/64359516/97462444-a01b3c80-1936-11eb-8aed-ff6f4135a9bc.PNG)
+
+* Once the input have been selected, the user will be able to view the below:
+
+![aylien2](https://user-images.githubusercontent.com/64359516/97462728-effa0380-1936-11eb-9b03-87d14d23fe7c.PNG)
+
 ## Author
 ### Diana Rugea
-
-
